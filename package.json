@@ -1,0 +1,22 @@
+{
+  "name": "set-io-immediate",
+  "version": "0.0.0",
+  "description": "",
+  "main": "main.cc",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rebuild": "node-gyp rebuild",
+    "configure": "node-gyp configure",
+    "build": "node-gyp build",
+    "re": "node-gyp configure build"
+  },
+  "author": "",
+  "license": "ISC",
+  "gypfile": true,
+  "dependencies": {
+    "nan": "^2.19.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^10.1.0"
+  }
+}
