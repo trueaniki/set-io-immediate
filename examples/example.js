@@ -24,8 +24,8 @@ const hook = asyncHooks.createHook({
   }
 });
 
-console.log = log;
-hook.enable();
+// console.log = log ;
+// hook.enable();
 
 process.nextTick(() => {
   console.log('nextTick')
@@ -39,7 +39,7 @@ setImmediate(() => {
   console.log('immediate')
 })
 
-setIOImmediate.withNan(
+setIoImmediate(
   () => {
     console.log('nan worker finished')
   },
@@ -53,3 +53,9 @@ console.log('sync')
 setTimeout(() => {
   console.log('timeout')
 }, 0)
+
+setTimeout(() => {
+  console.log('timeout 2')
+}, 0)
+
+Server.listen(3000, '192.168.100.24', () => {})

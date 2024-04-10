@@ -7,8 +7,6 @@ public:
   ~NaNAsyncWorker() {}
 
   __attribute__((noinline)) void Execute () {
-    auto a = 1;
-    a++;
     return;
   }
 
